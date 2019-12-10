@@ -37,13 +37,10 @@ function game() {
     for(i = 4; i >= 0; i--){
         const comp = computerPlay();
         const userChoice = prompt("Rock, Paper or Scissors?").toLowerCase();
-        if(userChoice!=r && userChoice != p && userChoice != s){
-            console.log('invalid choice, leaving game');
-            break;
-        }
         console.log(`${comp} vs ${userChoice} ` + playRound(comp, userChoice));
     }
     
 }
+
 
 game();
